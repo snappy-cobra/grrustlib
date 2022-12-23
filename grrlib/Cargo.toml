@@ -1,19 +1,19 @@
 [package]
-name = "grrustlib"
+name = "grrlib"
 version = "0.1.0"
 authors = ["snappy-cobra"]
 edition = "2021"
 license = "MIT"
 readme = "README.md"
 description = "Rust bindings for GRRLIB wii rendering library"
-documentation = "https://docs.rs/grrustlib/"
+documentation = "https://docs.rs/grrlib/"
 homepage = "https://github.com/snappy-cobra/grrustlib"
 repository = "https://github.com/snappy-cobra/grrustlib"
 keywords = ["wii", "embedded", "no-std"]
 
-[lib]
-crate-type = ["rlib"]
-
 [dependencies]
 libc = "0.2"
-grrlib = "0.1.0"
+
+[build-dependencies]
+bindgen = "0.63"
+regex = "1.5"
